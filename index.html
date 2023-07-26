@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+
+    <link rel="stylesheet" href="style.css">
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+      <div class="text">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly <br> updates on:</p>
+        <ul>
+          <li><img src="images/icon-list.svg" alt="">Product discovery and building what matters</li>
+          <li><img src="images/icon-list.svg" alt="">Measuring ro ensure updates are a success</li>
+          <li><img src="images/icon-list.svg" alt="">And much more!</li>
+        </ul>
+        <form action="">
+
+          <label for="email">Email address</label>
+          <input type="email" name="email" id="email" placeholder="email@company.com">
+          <input type="submit" value="Subscribe to monthly newsletter">
+        </form>
+        
+      </div>
+      <div class="img">
+        <img src="images/illustration-sign-up-desktop.svg" alt="desktop img">
+      </div>
+    </div>
+    
+    <!-- ---------------- -->
+    <div class="success" style="display: none;">
+      <img src="images/icon-success.svg" alt="">
+      <h1>Thanks for <br> subscribing!</h1>
+      <p>A confirmation email has been sent to <br> <span> </span> please open it and click <br> the button inside to confirm your subscription
+      </p>
+      <div class="btn"> Dismiss message</div>
+    </div>
+
+</body>
+<script src="main.js"></script>
+</html>
