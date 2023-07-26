@@ -9,8 +9,12 @@ let span = document.querySelector(".success p span")
 document.forms[0].addEventListener("submit", function (e) {
   if (email.value.includes("@") && email.value.length >= 15) {
     span.textContent = email.value;
-    container.style.display = "none";
-    message.style.display = "block";
+    container.classList.add("close");
+    setTimeout(()=>{
+      container.style.display="none";
+      message.style.display = "block";
+    },1500)
+
   } else {
     email.setAttribute("class","false");
   }
@@ -20,7 +24,10 @@ document.forms[0].addEventListener("submit", function (e) {
 // on click btn of success message 
 btn.addEventListener("click",()=>{
     btn.parentElement.style.display="none";
-    container.style.display ="flex"
+
+    container.classList.remove("close");
+    container.style.display ="flex";
+    
     email.value ="";
     if (email.classList.contains("false")){
       email.classList.remove("false")
