@@ -52,12 +52,12 @@ body {
 }
 .container .text {
   margin-top: 30px;
-  margin-right: 50px;
-  margin-left: 30px;
+  padding-right: 50px;
+  margin-left: 20px;
 }
 .container .text h1 {
   color: hsl(235, 18%, 26%);
-  font-size: 50px;
+  font-size: 60px;
 }
 .container .text p {
   color: hsl(235, 18%, 26%);
