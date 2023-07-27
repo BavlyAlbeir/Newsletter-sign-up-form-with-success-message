@@ -43,8 +43,11 @@ window.onresize = function(){
 w = window.innerWidth;
 if ( w <=550){
     img.setAttribute("src","images/illustration-sign-up-mobile.svg");
+    img.setAttribute("alt","mobile img");
 }else{
-    img.setAttribute("src","images/illustration-sign-up-desktop.svg")
+    img.setAttribute("src","images/illustration-sign-up-desktop.svg");
+    img.setAttribute("alt","desktop img");
+
 
 }
 }
