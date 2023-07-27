@@ -206,10 +206,17 @@ body{
 .success p span{
   font-weight: bold;
 }
+.success p span:before{
+  content: "\a";
+  white-space: pre;
+}
 .success .btn{
+  border: none;
+  font-size: 14px;
+  width: 100%;
   background-color:hsl(234, 29%, 20%);
   color: white;
-  padding: 15px;
+  padding: 20px;
   border-radius: 10px ;
   display: flex;
   justify-content: center;
